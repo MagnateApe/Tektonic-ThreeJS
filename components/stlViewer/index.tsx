@@ -72,9 +72,11 @@ export default function StlViewer({
 						x = pos.y / (pos.z * 10)
 						z = pos.z / (pos.z * 10)
 					}
-					intersects[0].object.parent.rotateX(x)
-					intersects[0].object.parent.rotateY(y)
-					intersects[0].object.parent.rotateZ(z)
+					// intersects[0].object.parent.rotateX(x)
+					// intersects[0].object.parent.rotateY(y)
+					// intersects[0].object.parent.rotateZ(z)
+					
+					intersects[0].object.parent.rotateY(10)
 
 					return
 				}
@@ -346,20 +348,25 @@ export default function StlViewer({
 					mouseLeaveY: 0,
 				})
 
-				if (top) {
-					element.add(meshTop)
-				}
+				// if (top) {
+				// 	element.add(meshTop)
+				// }
+
+				// if (bottom) {
+				// 	element.add(meshBottom)
+				// }
+
+				// if (right) {
+				// 	element.add(meshRight)
+				// }
+
+				// if (left) {
+				// 	element.add(meshLeft)
+				// }
+
 
 				if (bottom) {
 					element.add(meshBottom)
-				}
-
-				if (right) {
-					element.add(meshRight)
-				}
-
-				if (left) {
-					element.add(meshLeft)
 				}
 			}
 		}
